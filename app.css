@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    
+}
+
+*::selection {
+    color: #fff;
+    background: #ff6b5f;
+}
+
+* a {
+    text-decoration: none;
+}
+
+body {
+    font-size: 16px;
+    overflow-x: hidden;
+    background: #fff;
+}
+
+nav {
+    position: relative;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+#Hamburger {
+    display: none;
+}
+
+/* 
+   ==========================
+   ==   Navbar Styles    ====
+   ========================== 
+ */
+
+/* flexbox container */
+header {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('images/desktop/image-header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.nav-container {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.nav-logo {
+    display: flex;
+    width: 50vw;
+    justify-content: start;
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    width: 45vw;
+    justify-content: end;
+    align-items: center;
+}
+
+
+/* Nav styling */
+.logo-link {
+    font-family: 'barlow', sans-serif;
+    font-size: 3rem;
+    font-weight: 900;
+    color: #fff;
+    padding: 0.75em 1.25em;
+}
+
+.nav-link {
+    font-family: 'barlow', sans-serif;
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #fff;
+    padding: 0.75em 1.25em;
+}
+
+.nav-link-special {
+    font-family: 'fraunces', serif;
+    font-size: 1.25em;
+    text-transform: uppercase;
+    color: #000;
+    background: #fff;
+    padding: 0.75em 1.25em;
+    border-radius: 4em;
+}
+
+.nav-link-special:hover {
+    background: hsl(0, 0%, 100%, 0.3);
+    color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+
+/* 
+   ==========================
+   ===   Hero Section    ====
+   ========================== 
+ */
+
+
+.hero-content {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100vw;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* hero section styling */
+
+.main-title {
+    font-family: 'fraunces', serif;
+    font-size: 3.25em;
+    font-weight: 900;
+    color: #fff;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    padding-bottom: 1em;
+}
+
+.arrow {
+    margin-bottom: 4em;
+}
+
+
+
+/* 
+   ==========================
+   ===   Main Section    ====
+   ========================== 
+ */
+
+
+ /* =============================
+    Grid of marketing information
+    ============================= */
+
+.egg {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/desktop/image-transform.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cup {
+    width: 100%;
+    height: 100%;
+    background-image: url('images/desktop/image-stand-out.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    place-content: center;
+    place-items: center;
+    width: 100vw;
+    background: #fff;
+}
+
+
+.grid-content {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 5% 20%;
+
+}
+
+.grid-title {
+    font-family:'fraunces', serif;
+    font-size: 2.75em;
+    font-weight: 900;
+    line-height: 1;
+    color: hsl(212, 27%, 19%);
+    padding-right: 10%;
+}
+
+.grid-text {
+    font-family: 'barlow', sans-serif;
+    font-size: 1.225rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: hsl(213, 9%, 39%);
+    margin-top: 2.25rem;
+}
+
+.learn-more {
+    font-family:'fraunces', serif;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    color: hsl(212, 27%, 19%);
+    margin-top: 2.5rem;
+}
+
+/* learn Mpore border bottom with transition */
+.yellow {
+    border-bottom: 5px solid hsl(51, 100%, 49%, 0.3);
+    width: 20%;
+}
+
+.yellow:hover {
+    cursor: pointer;
+    border-bottom: 5px solid hsl(51, 100%, 49%, 1);
+    transition: 0.5s;
+}
+
+.red {
+    border-bottom: 5px solid hsl(7, 99%, 70%, 0.5);
+    width: 20%;
+}
+
+.red:hover {
+    cursor: pointer;
+    border-bottom: 5px solid hsl(7, 99%, 70%, 1);
+    transition: 0.5s;
+}
+
+/* bottom two grid items */
+.cherry, .orange {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.cherry {
+    background-image: url('images/desktop/image-graphic-design.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    padding: 45% 20% 0;
+}
+
+.orange {
+    background-image: url('images/desktop/image-photography.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    padding: 45% 20% 0;
+}
+
+
+.small-title {
+    font-family: 'fraunces', serif;
+    font-size: 1.5em;
+    color: hsl(212, 27%, 19%);
+    padding-bottom: 1rem;
+}
+
+.small-text {
+    font-family: 'barlow', sans-serif;
+    font-size: 1em;
+    font-weight: 600;
+    color: hsl(212, 27%, 19%, 0.7);
+    line-height: 1.5;
+    text-align: center;
+}
+
+
+ /* =============================
+        client testimonials
+    ============================= */
+
+.clients {
+    background: #fff;
+    padding: 9rem 0 6rem;
+}
+    
+.clients-section-title {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 3.5rem;
+    /* typography */
+    font-family: 'fraunces', serif;
+    font-size: 1.25rem;
+    font-weight: 900;
+    color: hsl(210, 4%, 67%);
+    text-transform: uppercase;
+    letter-spacing: 15px;
+}
+
+.clients-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2em 7em;
+    text-align: center;
+}
+
+.person img {
+    border-radius: 50%;
+    width: 100px;
+    margin-bottom: 2.75rem;
+}
+
+.person-text {
+    font-family: 'barlow', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.5;
+    color: hsl(212, 27%, 19%);
+    padding: 0 10%;
+}
+
+.person-name {
+    font-family: 'fraunces', serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    color: hsl(212, 27%, 19%);
+    padding-top: 3.5rem;
+}
+
+.person-job {
+    font-family: 'barlow', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    color: hsl(210, 4%, 67%);
+    padding-top: 1rem;
+}
+
+
+ /* =============================
+          grid of showcase
+    ============================= */
+
+.showcase-container {
+    display: grid;
+    width: 100vw;
+    min-height: 50vh;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.milk {
+    background-image: url('images/desktop/image-gallery-milkbottles.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.plate {
+    background-image: url('images/desktop/image-gallery-orange.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.cone {
+    background-image: url('images/desktop/image-gallery-cone.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+.sugar {
+    background-image: url('images/desktop/image-gallery-sugarcubes.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+}
+
+
+/* 
+   ==========================
+   ===   footer Section  ====
+   ========================== 
+ */
+
+ .footer {
+     width: 100vw;
+     background: #87cfbe;
+     padding: 5rem 5rem 1rem;
+ }
+
+ .footer-links a, .footer-brand, .footer-socials {
+    color: #25564b;
+ }
+
+
+    /* flex container for footer brand and links and socials */
+ 
+.flex-column {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: column;
+
+     font-family: 'barlow', sans-serif;
+     font-size: 1.25rem;
+     font-weight: 600;
+}
+
+
+.footer-brand {
+     font-size: 2.5rem;
+     font-weight: 900;
+     padding-bottom: 2rem;
+}
+
+
+.footer-link {
+    padding: 0.5rem 1.5rem;
+}
+ 
+
+.footer-socials {
+     padding-top: 4rem;
+}
+ 
+.socials {
+     padding: 0.5rem 1rem;
+}
+
+footer a:hover {
+    color: #fff;
+    transition: 0.5s;
+}
+
+.icon {
+    fill: #25564b;
+}
+
+.icon:hover {
+    filter: grayscale(0);
+    transition: 0.5s;
+}
+
+
+/* attribution section */
+.attribution {
+    background: #87cfbe;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100vw;
+    height: 2.75rem;
+    font-size: 0.75rem;
+    color: rgb(41, 126, 106);
+    padding: 2rem 0;
+}
+
+a.attr-link {
+    color: rgb(11, 53, 43);
+}
+
+
+
+
+
+
+

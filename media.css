@@ -1,0 +1,399 @@
+@media (max-width: 994px) {
+    
+    .grid-wrapper {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 1fr );
+        place-content: center;
+        place-items: center;
+        width: 100vw;
+        text-align: center;
+    }
+    
+    .grid-content {
+        display: block;
+        padding: 5% 20%;
+    }
+
+    .egg {
+        width: 100%;
+        height: 100%;
+        background-image: url('images/desktop/image-transform.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .cup {
+        width: 100%;
+        height: 100%;
+        background-image: url('images/desktop/image-stand-out.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    
+    .grid-title {
+        font-size: 2.25em clamp(1.25rem, 1.75rem, 2.25rem);
+        padding: 2rem;
+    }
+    
+    .learn-more {
+        margin-bottom: 1rem;
+    }
+
+    .grid-text {
+        margin-bottom: 2rem;
+        margin-top: 0;
+    }
+
+    .yellow {
+        width: 100vw;
+        border-bottom: none;
+        text-decoration: underline solid hsl(51, 100%, 49%, 0.3) 5px;
+    }
+
+    .yellow:hover {
+        cursor: pointer;
+        border-bottom: none;
+        text-decoration: underline solid   hsl(51, 100%, 49%, 1) 5px;
+        transition: 0.5s;
+    }
+    
+    .red {
+        border-bottom: none;
+        text-decoration: underline solid 5px hsl(7, 99%, 70%, 0.5);
+        width: 100vw;
+    }
+    
+    .red:hover {
+        border-bottom: none ;
+        text-decoration: underline solid 5px hsl(7, 99%, 70%, 1);
+        transition: 0.5s;
+    }
+
+
+    .clients-container {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 2rem 9rem;
+        text-align: center;
+    }
+
+    .person {
+        margin: 2.5rem 0;
+    }
+
+    .person-name {
+        padding-top: 2rem;
+    }
+    
+    .person-job {
+        padding-top: 0.5rem;
+    }
+
+    .person-text {
+        font-size: 1.25rem;
+    }
+
+}
+
+
+
+/* ============================
+    +++++++++ Mobile +++++++++++
+    ============================ */
+    @media (max-width: 440px) {
+    
+    nav {
+        position: relative;
+        top: 0;
+        width: 100vw;
+        height: 70vh;
+    }
+
+    #hamburger {
+        display: inline-block;
+    }
+
+    .line {
+        width: 35px;
+        height: 5px;
+        background: #fff;
+        margin: 6px 0;
+    }
+
+    .mainMenu {
+        list-style: none;
+    }
+
+    /* 
+   ==========================
+   ==   Navbar Styles    ====
+   ========================== 
+ */
+
+    /* flexbox container */
+    header {
+        width: 100vw;
+        height: 70vh;
+        background-image: url('images/desktop/image-header.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: 50%;
+        background-position-y: 50%;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    .logo-link {
+        font-size: 2rem;
+        padding: 0.75em 1em;
+    }
+
+    .nav-container {
+        justify-content: start;
+    }
+
+
+    
+    /* 
+   ==========================
+   ===   Hero Section    ====
+   ========================== 
+    */
+
+    .hero-content {
+        display: flex;
+        flex-flow: column wrap;
+        width: 100vw;
+        min-height: 50vh;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    /* hero section styling */
+
+    .main-title {       
+        font-size: 2.25em;
+        padding-bottom: 1em;
+        text-align: center;
+        margin-top: 10rem;
+    }
+
+    .arrow {
+        margin-bottom: 0;
+    }
+
+    /* 
+   ==========================
+   ===   Main Section    ====
+   ========================== 
+ */
+
+
+ /* =============================
+    Grid of marketing information
+    ============================= */
+
+    .grid-wrapper {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-auto-flow: row;
+        place-content: center;
+        place-items: center;
+        width: 100vw;
+        text-align: center;
+    }
+    
+    
+    .grid-content {
+        display: flex;
+        flex-flow: column wrap;
+        padding: 2.5rem;
+        order: 2;
+    }
+
+    .egg {
+        order: 1;
+    }
+
+    .cherry {
+        order: 3;
+    }
+
+    .grid-title {
+        font-size: 2.25em;
+        padding: 0;
+    }
+    
+    .grid-text {
+        font-size: 1rem;
+        margin-top: 2.25rem;
+        padding: 0 2rem;
+    }
+    
+    .learn-more {
+        font-size: 1.25rem;
+        margin-top: 2.5rem;
+        text-align: center;
+    }
+
+    .yellow {
+        width: 100vw;
+        border-bottom: none;
+        text-decoration: underline solid hsl(51, 100%, 49%, 0.3) 5px;
+    }
+
+    .yellow:hover {
+        cursor: pointer;
+        border-bottom: none;
+        text-decoration: underline solid   hsl(51, 100%, 49%, 1) 5px;
+        transition: 0.5s;
+    }
+    
+    .red {
+        border-bottom: none;
+        text-decoration: underline solid 5px hsl(7, 99%, 70%, 0.5);
+        width: 100vw;
+    }
+    
+    .red:hover {
+        border-bottom: none ;
+        text-decoration: underline solid 5px hsl(7, 99%, 70%, 1);
+        transition: 0.5s;
+    }
+
+    
+    /* bottom two grid items */
+    
+    .cherry, .orange {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 70vh;
+    }
+
+    .cherry {
+    background-image: url('images/desktop/image-graphic-design.jpg');
+    background-size: cover;
+    width: 100vw;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 60% 5% 0;
+    order: 4;
+    }
+
+    .orange {
+    background-image: url('images/desktop/image-photography.jpg');
+    background-size: cover;
+    width: 100vw;
+    height: 70vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 60% 5% 0;
+    order: 5;
+    }
+
+    /* =============================
+        client testimonials
+    ============================= */
+
+    .clients {
+        padding: 4rem 0 6rem;
+    }
+    
+    .clients-section-title {
+        display: flex;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 3.5rem;
+        /* typography */
+    
+        font-size: 1rem;
+        letter-spacing: 5px;
+    }
+
+    .clients-container {
+        display: flex;
+        flex-flow: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 2rem 0.75rem;
+        text-align: center;
+    }
+
+    .person {
+        margin: 2.5rem 0;
+    }
+
+    .person-name {
+        padding-top: 2rem;
+    }
+    
+    .person-job {
+        padding-top: 0.5rem;
+    }
+
+    /* =============================
+          grid of showcase
+    ============================= */
+
+    .showcase-container {
+        display: grid;
+        width: 100vw;
+        min-height: 50vh;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .flex-column {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column;
+        font-size: 1.25rem;
+
+   }
+
+    .footer {
+        width: 100vw;
+        height: auto;
+        background: #87cfbe;
+        padding: 3rem 1rem 1rem;
+    }
+   
+   .footer-brand {
+        font-size: 2.5rem;
+        font-weight: 900;
+        padding-bottom: 2rem;
+    }
+
+    .footer-link {
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+
+    .footer-socials {
+        padding-top: 3rem;
+    }
+
+    .socials {
+        padding: 0.7rem 1rem;
+    }
+
+    .nav-links {
+        display: none;
+    }
+}
+
+
+
