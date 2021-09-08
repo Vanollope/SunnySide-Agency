@@ -112,20 +112,6 @@
         height: 70vh;
     }
 
-    #hamburger {
-        display: inline-block;
-    }
-
-    .line {
-        width: 35px;
-        height: 5px;
-        background: #fff;
-        margin: 6px 0;
-    }
-
-    .mainMenu {
-        list-style: none;
-    }
 
     /* 
    ==========================
